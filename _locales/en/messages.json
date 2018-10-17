@@ -1,0 +1,10 @@
+{
+    "appName": {
+      "message": "Show Conference/Journal Ranking",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "Show conference/journal rankings in search results. Currently supports CCF(China Computer Federation) rankings on IEEExplore.", 
+      "description":"The description of the application, displayed in the web store."
+    }
+  }
