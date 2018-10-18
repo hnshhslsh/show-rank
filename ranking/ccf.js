@@ -10,6 +10,7 @@ ccf.getRankingInfo = function(names){
             let possible = ccf.rankingAbbrName[name.abbr];
             if(possible == undefined){
                 ranking = 'none';
+                rankingInfo.info += "[" + name.abbr + "] " + name.full + ": not found\n"
             } else {
                 rankingInfo.info += name.abbr + ":" + "\n";
                 for(let fullname in possible){
@@ -17,6 +18,8 @@ ccf.getRankingInfo = function(names){
                     ranking = possible[fullname] + '?';
                 }
             }
+        } else {
+            rankingInfo.info += name.full + ": CCF " + ranking + "\n"
         }
         rankingInfo.rankings.push(ranking);
     }
