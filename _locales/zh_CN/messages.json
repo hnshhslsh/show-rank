@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "在论文搜索结果页面显示会议/期刊等级。目前支持在IEEExplore上显示CCF(中国计算机协会)等级", 
+      "message": "在论文搜索结果页面显示会议/期刊等级。目前支持在 IEEExplore 和 ACM DL 上显示 CCF 等级。", 
       "description":"The description of the application, displayed in the web store."
     }
   }

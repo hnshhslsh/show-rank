@@ -49,14 +49,7 @@ ieee.parseNames = function(source){
         full = source;
         abbr = "";
     }
-    let words = full.split(' ');
-    for(let i in words){
-        if('0' <= words[i][0] && words[i][0] <= '9' && words[i] != '11.9'){
-            words.splice(i, 1);
-            --i;
-        }
-    }
-    full = words.join(' ').split(";");
+    full = siteUtil.removeNumbers(full).split(";");
     abbr = abbr.split("/");
     for(let i = 0; i < Math.max(full.length, abbr.length); ++i){
         let name = {};
