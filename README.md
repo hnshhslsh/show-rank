@@ -1,7 +1,7 @@
 # show-rank
-Extension for Google Chrome to show conference/journal rankings in search results. Currently supports CCF(China Computer Federation) rankings on [IEEExplore](https://ieeexplore.ieee.org).
+Extension for Google Chrome to show conference/journal rankings in search results. Currently supports CCF(China Computer Federation) rankings on [IEEExplore](https://ieeexplore.ieee.org) and [ACM Digital Library](https://dl.acm.org/) .
 
-一个 Google Chrome 扩展，用于在论文搜索结果页面显示会议/期刊等级。目前支持在  [IEEExplore](https://ieeexplore.ieee.org) 上显示 CCF (中国计算机协会)等级。
+一个 Google Chrome 扩展，用于在论文搜索结果页面显示会议/期刊等级。目前支持在  [IEEExplore](https://ieeexplore.ieee.org) 和 [ACM Digital Library](https://dl.acm.org/)  上显示 CCF （中国计算机协会）等级。
 
 ## Intstall
 
@@ -11,21 +11,29 @@ Install from Chrome Webstore / 从 Chrome 网上应用店上安装：
 
 Direct download / 直接下载：
 
-[https://github.com/hnshhslsh/show-rank/releases/download/v1.0.0/show-rank-v1.0.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.0.0/show-rank-v1.0.0.crx)
+[https://github.com/hnshhslsh/show-rank/releases/download/v1.1.0/show-rank-v1.1.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.1.0/show-rank-v1.1.0.crx)
 
 ## Introduction
 
-When searching for papers on  [IEEExplore](https://ieeexplore.ieee.org) , the CCF rankings of conferences/journals  are automatically placed before the sources and marked with different colors.
+When searching for papers on  [IEEExplore](https://ieeexplore.ieee.org) or [ACM Digital Library](https://dl.acm.org/) , the CCF rankings of conferences/journals  are automatically placed before the sources and marked with different colors.
 
-在 [IEEExplore](https://ieeexplore.ieee.org) 上搜索论文时，会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。
+在 [IEEExplore](https://ieeexplore.ieee.org) 或 [ACM Digital Library](https://dl.acm.org/) 上搜索论文时，会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。
 
 ![CCF ranking on IEEExplore](img/ieee.png)
 
 
 
-If the abbreviation of the conference/journal can be found in the ranking database, but the full name does not match, a question mark `?`will be displayed after the ranking. When the mouse is hovering over the ranking with a question mark, the full name of the conference/journal corresponding to the abbreviation of this ranking will be displayed for inspection. 
+If the abbreviation of the conference/journal can be found in the ranking database, but the full name does not match, a question mark `?`will be displayed after the ranking. When the mouse is hovering over a ranking with a question mark, the full name of the conference/journal corresponding to the abbreviation of this ranking will be displayed for inspection. 
 
 如果会议/期刊的简称可以在等级数据库中查询到，但全称并不完全匹配，则会在等级后显示问号`?`。鼠标悬浮在带有问号的标识上时，会显示该等级的简称对应的会议/期刊全称，以供检验。
 
 ![ranking with '?'](img/question.png)
+
+When the mouse is hovering over a ranking without a question mark, the recognized meeting/journal name will be displayed for inspection. 
+
+鼠标悬浮在没有问号的标识上时，会显示识别到的会议/期刊名称，以供检验。
+
+![c without '?'](img/ccfc.png)
+
+![none without '?'](img/ccfnone.png)
 
