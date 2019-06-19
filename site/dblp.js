@@ -3,19 +3,52 @@ const dblp = {};
 dblp.resultsCount = 0;
 dblp.rankingSpanProvider = [];
 
+var aa=false;
+
 dblp.start = function(){
     let interval = setInterval(function(){
-        let message = $('#completesearch-publs > div > p.waiting').css('display');
-        if(message == "none"){
-            clearInterval(interval);
-            $('#infinitescroll-pagination > a').click(dblp.addRankings);
-            dblp.addRankings();
-        }
+        $(function(){
+            let message = $('#completesearch-publs > div > p.waiting').css('display');
+            if(message == "none"){
+                //clearInterval(interval);
+                //$(window).scroll(dblp.judge);
+                dblp.addRankings();
+            }
+        })
     }, 1000);
 }
 
+// dblp.judge = function(){
+//     let scrollTop = 0; //滚动条当前的位置
+//     let clientHeight = 0;  //当前可视范围的高度  
+//     let documentHeight=Math.max(document.body.scrollHeight, 
+//         document.documentElement.scrollHeight); //文档完整的高度
+
+//     if (document.documentElement && document.documentElement.scrollTop) {   
+//         scrollTop = document.documentElement.scrollTop;   
+//     }   
+//     else if (document.body) {   
+//         scrollTop = document.body.scrollTop;   
+//     }
+ 
+//     if (document.body.clientHeight && document.documentElement.clientHeight) {   
+//         clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight);   
+//     }   
+//     else {   
+//         clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight);   
+//     }
+//     //console.log(scrollTop+','+clientHeight+','+documentHeight);
+//     //经过debug发现dblp的页面刷新机制
+//     //scrollTop+2*clientHeight>=documentHeight
+//     if(scrollTop+2*clientHeight>=documentHeight){
+//         console.log(scrollTop+','+clientHeight+','+documentHeight);
+//         dblp.addRankings();
+//     }
+
+// }
+
 dblp.addRankings = function(){
-    let results = $(".entry > div.data > a > span:nth-child(1) > span");//获取期刊或会议名称
+    let results = $(".entry > div.data > a > span:nth-child(1) > span:nth-child(1)");//获取期刊或会议名称
     if(results.length == dblp.resultsCount){
         setTimeout(dblp.addRankings, 1000);
         return ;
@@ -30,11 +63,19 @@ dblp.addRankings = function(){
             if(source.length != 0){
                 let names = dblp.parseNames(source);
                 for(let getRankingSpan of dblp.rankingSpanProvider){
-                    result.after(getRankingSpan(names));
+                    if($(this).next().hasClass('ccf-ranking')){
+                        result.after('');
+                    }else{
+                        result.after(getRankingSpan(names));
+                    }
                 }
             }
         }
     });
+    if(!aa){
+        console.log(results);
+        aa=true;
+    }
 }
 
 dblp.parseNames = function(source){
