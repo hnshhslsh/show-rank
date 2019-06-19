@@ -2,7 +2,9 @@
 
 support to DBLP website including pages turning by scrolling 
 
-我在之前一位作者的代码基础上，添加了对dblp网站的支持，并更新了ccf排名到2019年的版本
+我在之前一位作者的代码基础上，添加了对dblp网站的支持（主要工作是滚动翻页和ajax搜索均可查询排名，支持短名称查询），并更新了ccf排名到2019年的版本
+
+
 
 感谢https://github.com/magichan/CCF-Recommended-Catalog-2019 提供ccf数据支持
 

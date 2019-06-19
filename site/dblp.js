@@ -45,8 +45,14 @@ dblp.parseNames = function(source){
         full = source.substring(0, index);
         abbr = source.substring(index + 1, source.length - 1);
     } else {
-        full = source;
-        abbr = "";
+        if(source.length<=12){
+            abbr=source;
+            full="";
+        }else{
+            full = source;
+            abbr = "";
+        }
+        
     }
     full = siteUtil.removeNumbers(full).split(";");
     abbr = abbr.split("/");
