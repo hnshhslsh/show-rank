@@ -4,21 +4,25 @@ dblp.rankingSpanProvider = [];
 
 dblp.start = function(){
     let interval = setInterval(function(){
-        let message = $('#completesearch-publs > div > p.waiting').css('display');
-        if(message == "none"){
-            $(window).bind('popstate', function(){
+        let url = window.location.href;
+        let title = $('head > title').text();
+        if(url.startsWith("https://dblp.uni-trier.de/search?") || title.indexOf("Search for")!=-1){
+            let message = $('#completesearch-publs > div > p.waiting');
+            
+            if(message.css('display') == "none"){
+                $(window).bind('popstate', function(){
+                    dblp.addRankings();
+                });
                 dblp.addRankings();
-            });
-            dblp.addRankings();
+            }
         }
     }, 1000);
 }
 
 dblp.addRankings = function(){
-    let results = $(".entry > div.data > a > span:nth-child(1) > span:nth-child(1)");//获取期刊或会议名称
-    
+    let results = $("article > a > span:nth-child(1) > span:nth-child(1)");//获取期刊或会议名称
     dblp.resultsCount = results.length;
-    
+
     results.each(function(index){
         let result = $(this);
         let source = result.text().trim();

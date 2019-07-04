@@ -6,6 +6,6 @@ if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp
     ieee.start();
 } else if(location.href.startsWith("https://dl.acm.org/results.cfm?")){
     acm.start();
-} else if(location.href.startsWith("https://dblp.uni-trier.de/search?")){
+} else if(location.href.startsWith("https://dblp.uni-trier.de")){
     dblp.start();
 } 

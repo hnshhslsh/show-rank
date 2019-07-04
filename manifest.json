@@ -21,7 +21,7 @@
             "matches": [
                 "https://ieeexplore.ieee.org/search/searchresult.jsp?*",
                 "https://dl.acm.org/results.cfm?*",
-                "https://dblp.uni-trier.de/search?*"
+                "https://dblp.uni-trier.de/*"
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
