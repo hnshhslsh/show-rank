@@ -20,7 +20,8 @@
         {
             "matches": [
                 "https://ieeexplore.ieee.org/search/searchresult.jsp?*",
-                "https://dl.acm.org/results.cfm?*"
+                "https://dl.acm.org/results.cfm?*",
+                "https://dblp.uni-trier.de/*"
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
@@ -28,6 +29,7 @@
                 "site/siteUtil.js",
                 "site/acm.js",
                 "site/ieee.js",
+                "site/dblp.js",
                 "data/ccfRankingAbbrName.js",
                 "data/ccfRankingFullName.js",
                 "script.js"
