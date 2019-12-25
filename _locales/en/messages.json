@@ -4,7 +4,7 @@
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "Show conference/journal rankings in search results. Currently supports CCF rankings on DBLP, IEEExplore and ACM DL.", 
+      "message": "Show conference/journal rankings in search results. Currently supports CCF rankings on Springer, DBLP, IEEExplore and ACM DL.",
       "description":"The description of the application, displayed in the web store."
     }
   }

@@ -1,7 +1,7 @@
 # show-rank
-Extension for Google Chrome to show conference/journal rankings in search results. Currently supports CCF(China Computer Federation) rankings on [IEEExplore](https://ieeexplore.ieee.org), [ACM Digital Library](https://dl.acm.org/) and [DBLP](https://dblp.uni-trier.de/).
+Extension for Google Chrome to show conference/journal rankings in search results. Currently supports CCF(China Computer Federation) rankings on [Springer](https://link.springer.com/), [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org) and [ACM Digital Library](https://dl.acm.org/).
 
-一个 Google Chrome 扩展，用于在论文搜索结果页面显示会议/期刊等级。目前支持在  [IEEExplore](https://ieeexplore.ieee.org), [ACM Digital Library](https://dl.acm.org/) 和 [DBLP](https://dblp.uni-trier.de/)上显示 CCF （中国计算机协会）等级。
+一个 Google Chrome 扩展，用于在论文搜索结果页面显示会议/期刊等级。目前支持在 [Springer](https://link.springer.com/), [DBLP](https://dblp.uni-trier.de/), [IEEExplore](https://ieeexplore.ieee.org) 和 [ACM Digital Library](https://dl.acm.org/) 上显示 CCF （中国计算机协会）等级。
 
 ## Intstall
 
@@ -11,13 +11,13 @@ Install from Chrome Webstore / 从 Chrome 网上应用店上安装：
 
 Direct download / 直接下载：
 
-[https://github.com/hnshhslsh/show-rank/releases/download/v1.3.0/show-rank-v1.3.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.3.0/show-rank-v1.3.0.crx)
+[https://github.com/hnshhslsh/show-rank/releases/download/v1.4.0/show-rank-v1.4.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.4.0/show-rank-v1.4.0.crx)
 
 ## Introduction
 
-When searching for papers on [IEEExplore](https://ieeexplore.ieee.org), [ACM Digital Library](https://dl.acm.org/) or [DBLP](https://dblp.uni-trier.de/), the CCF rankings of conferences/journals  are automatically placed before the sources and marked with different colors.
+When searching for papers on the supported sites, the CCF rankings of conferences/journals are automatically placed before the sources and marked with different colors.
 
-在 [IEEExplore](https://ieeexplore.ieee.org)， [ACM Digital Library](https://dl.acm.org/) 或 [DBLP](https://dblp.uni-trier.de/) 上搜索论文时，会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。
+在支持的网站上搜索论文时，会自动地在来源前加上会议/期刊的 CCF 等级，并以不同颜色标识。
 
 ![CCF ranking on IEEExplore](img/ieee.png)
 
