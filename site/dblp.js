@@ -5,7 +5,7 @@ dblp.rankingSpanProvider = [];
 dblp.start = function(){
     let url = window.location.href;
     let title = $('head > title').text();
-    if(url.startsWith("https://dblp.uni-trier.de/search?") || title.indexOf("Search for")!=-1){
+    if(url.startsWith("https://dblp.uni-trier.de/search?")|| url.startsWith("https://dblp.org/search?") || title.indexOf("Search for")!=-1){
         let interval = setInterval(function(){
             let message = $('#completesearch-publs > div > p.waiting');
     
@@ -16,9 +16,9 @@ dblp.start = function(){
                 dblp.addRankings();
             }
         }, 1000);
-    } else if(url.startsWith("https://dblp.uni-trier.de/pers/")) {
+    } else if(url.startsWith("https://dblp.uni-trier.de/pers/") || url.startsWith("https://dblp.org/pers/")) {
         dblp.addRankings();
-    } else if(url.startsWith("https://dblp.uni-trier.de/db/conf/") || url.startsWith("https://dblp.uni-trier.de/db/journals/")) {
+    } else if(url.startsWith("https://dblp.uni-trier.de/db/conf/") || url.startsWith("https://dblp.uni-trier.de/db/journals/") || url.startsWith("https//dblp.org/db/conf/") || url.startsWith("https://dblp.org/db/journals/")) {
         // "https://dblp.uni-trier.de/db/".length == 29
         let start = url.indexOf("/", 29) + 1;
         let abbr = url.substring(start, url.indexOf("/",start)).toUpperCase();

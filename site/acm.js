@@ -7,7 +7,7 @@ acm.start = function () {
 }
 
 acm.addRankings = function () {
-    let results = $(".source > span:nth-child(2)");
+    let results = $(".issue-item__detail > a");
     results.each(function (index) {
         let result = $(this);
         let source = result.text().trim();
@@ -39,7 +39,9 @@ acm.parseNames = function (source) {
         full = source.substring(index2 == -1 ? index + ': '.length : (index2 + 'of the '.length), source.length);
     }
     full = siteUtil.removeNumbers(full).trim();
-    names.push({ 'full': full, 'abbr': abbr });
+    names.push({
+        'full': full,
+        'abbr': abbr
+    });
     return names;
 }
-
