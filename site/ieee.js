@@ -1,40 +1,61 @@
 const ieee = {};
 
-ieee.resultsCount = 0;
 ieee.rankingSpanProvider = [];
+ieee.loadMoreInited = false;
+ieee.desktopLastIndex = -1;
+ieee.mobileLastIndex = -1;
 
 ieee.start = function(){
     let interval = setInterval(function(){
-        let message = $('.List-results-message').text().trim();
-        if(message != "Getting results..."){
+        if(!ieee.isLoading()){
             clearInterval(interval);
-            $(".loadMore-btn").click(ieee.addRankings);
+            // for desktop page select
+            $("#xplMainContent > div.ng-SearchResults.row > div.main-section > xpl-paginator a").click(function(){
+                ieee.desktopLastIndex = -1;
+                ieee.mobileLastIndex = -1;
+                ieee.start();
+            });
+            // for mobile loadmore
+            if(!ieee.loadMoreInited) {
+                ieee.loadMoreInited = true;
+                $(".loadMore-btn").click(ieee.start);
+            }
             ieee.addRankings();
         }
     }, 1000);
 }
 
 ieee.addRankings = function(){
-    let results = $(".description > a");
-    if(results.length == ieee.resultsCount){
-        setTimeout(ieee.addRankings, 1000);
-        return ;
-    }
-    let from = ieee.resultsCount;
-    ieee.resultsCount = results.length;
-    
-    results.each(function(index){
-        if(index >= from){
-            let result = $(this);
-            let source = result.text().trim();
-            if(source.length != 0){
-                let names = ieee.parseNames(source);
-                for(let getRankingSpan of ieee.rankingSpanProvider){
-                    result.before(getRankingSpan(names));
-                }
-            }
+    // for desktop
+    $(".description > a").each(function(index){
+        if(index > ieee.desktopLastIndex) {
+            ieee.desktopLastIndex = index;
+            ieee.addRanking($(this));
         }
     });
+    // for mobile
+    $(".description > div:nth-child(1) > a").each(function(index){
+        if(index > ieee.mobileLastIndex) {
+            ieee.mobileLastIndex = index;
+            ieee.addRanking($(this));
+        }
+    });
+}
+
+ieee.isLoading = function() {
+    return $('.List-results-message').text().trim() == "Getting results..."
+        || $('xpl-progress-spinner').text().trim() == "Getting results..."
+        || $(".loadMore-btn > span.fa-spinner").length == 1
+}
+
+ieee.addRanking = function(result) {
+    let source = result.text().trim();
+    if(source.length != 0){
+        let names = ieee.parseNames(source);
+        for(let getRankingSpan of ieee.rankingSpanProvider){
+            result.before(getRankingSpan(names));
+        }
+    }
 }
 
 ieee.parseNames = function(source){

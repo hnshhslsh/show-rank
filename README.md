@@ -11,7 +11,7 @@ Install from Chrome Webstore / 从 Chrome 网上应用店上安装：
 
 Direct download / 直接下载：
 
-[https://github.com/hnshhslsh/show-rank/releases/download/v1.4.0/show-rank-v1.4.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.4.0/show-rank-v1.4.0.crx)
+[https://github.com/hnshhslsh/show-rank/releases/download/v1.5.0/show-rank-v1.5.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.5.0/show-rank-v1.5.0.crx)
 
 ## Introduction
 
