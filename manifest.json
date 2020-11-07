@@ -19,9 +19,10 @@
     "content_scripts": [
         {
             "matches": [
-                "https://ieeexplore.ieee.org/search/searchresult.jsp?*",
-                "https://dl.acm.org/results.cfm?*",
+                "https://ieeexplore.ieee.org/*",
+                "https://dl.acm.org/*",
                 "https://dblp.uni-trier.de/*",
+                "https://dblp.org/*",
                 "https://link.springer.com/search*"
             ],
             "js": [
