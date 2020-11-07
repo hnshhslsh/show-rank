@@ -11,7 +11,7 @@ Install from Chrome Webstore / 从 Chrome 网上应用店上安装：
 
 Direct download / 直接下载：
 
-[https://github.com/hnshhslsh/show-rank/releases/download/v1.5.0/show-rank-v1.5.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.5.0/show-rank-v1.5.0.crx)
+[https://github.com/hnshhslsh/show-rank/releases/download/v1.6.0/show-rank-v1.6.0.crx](https://github.com/hnshhslsh/show-rank/releases/download/v1.6.0/show-rank-v1.6.0.crx)
 
 ## Introduction
 
@@ -42,3 +42,4 @@ When the mouse is hovering over a ranking without a question mark, the recognize
 
 - [magichan](https://github.com/magichan/CCF-Recommended-Catalog-2019) for CCF Rank data / 提供CCF排名数据
 - [yishanchuan](https://github.com/yishanchuan/show-rank) for adding support of DBLP and updating CCF rank to 2019 / 添加对 DBLP 网站的支持，更新 CCF 排名到2019年的版本
+- [ToSeven](https://github.com/ToSeven/show-rank), [HJhao](https://github.com/HJhao/show-rank) for other updates / 其它更新
