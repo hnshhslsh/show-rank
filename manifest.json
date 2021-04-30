@@ -23,13 +23,15 @@
                 "https://dl.acm.org/*",
                 "https://dblp.uni-trier.de/*",
                 "https://dblp.org/*",
-                "https://link.springer.com/search*"
+                "https://link.springer.com/search*",
+                "https://www.engineeringvillage.com/search*"
             ],
             "js": [
                 "lib/jquery-3.3.1.min.js",
                 "ranking/ccf.js",
                 "site/siteUtil.js",
                 "site/acm.js",
+                "site/ei.js",
                 "site/ieee.js",
                 "site/dblp.js",
                 "site/springer.js",
