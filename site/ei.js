@@ -3,13 +3,11 @@ const ei = {};
 ei.rankingSpanProvider = [];
 
 ei.start = function(){
-    console.log('执行了呢')
     let interval = setInterval(function(){
         if(!ei.isLoading()){
             clearInterval(interval);
             //for desktop page select 
             $("#page-nav").click(function(){
-                console.log('重新执行了')
                 ei.start()
             });
             ei.addRankings();
@@ -45,7 +43,7 @@ ei.parseNames = function (source) {
     // 删除年限、第几届
     source = source.replace(/(3rd)|([0-9]{4})/g,'')
     // 删除所有的次序
-    
+
     source = source.replace(/.*[0-9]+th/g,'')
     source = source.trim()
 
