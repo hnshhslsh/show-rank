@@ -20,10 +20,11 @@ dblp.start = function(){
         dblp.addRankings();
     } else if(url.startsWith("https://dblp.uni-trier.de/db/conf/") || url.startsWith("https://dblp.uni-trier.de/db/journals/") || url.startsWith("https://dblp.org/db/conf/") || url.startsWith("https://dblp.org/db/journals/")) {
         let abbr = dblp.getAbbrFromUrl(url)
+        let uri = dblp.getUriFromUrl(url);
         if(url.endsWith(".html") && !url.endsWith("index.html")){
-            dblp.addRanking("#breadcrumbs > ul > li > span:nth-child(3) > a > span", abbr);
+            dblp.addRanking("#breadcrumbs > ul > li > span:nth-child(3) > a > span", abbr, uri);
         } else {
-            dblp.addRanking("h1", abbr);
+            dblp.addRanking("h1", abbr, uri);
         }
     } 
 }
@@ -38,6 +39,24 @@ dblp.getAbbrFromUrl = function (url) {
         return undefined;
     }
     return url.substring(start, url.indexOf("/", start)).toUpperCase();
+}
+
+dblp.getUriFromUrl = function (url) {
+    if(url.indexOf("/conf/uss/hotsec") != -1) {
+        return "conf/uss/hotsec"; //唯一的三级uri
+    }
+    let uriStart;
+    let searchStart;
+    if (url.startsWith("https://dblp.uni-trier.de/db/")) {
+        uriStart = 29; // "https://dblp.uni-trier.de/db/".length == 29
+        searchStart = url.indexOf("/", uriStart) + 1; 
+    } else if (url.startsWith("https://dblp.org/db/")) {
+        uriStart = 20; // "https://dblp.org/db/".length == 20
+        searchStart = url.indexOf("/", uriStart) + 1
+    } else {
+        return undefined;
+    }
+    return url.substring(uriStart, url.indexOf("/", searchStart)).toLowerCase();
 }
 
 dblp.addRankings = function(){
@@ -55,16 +74,17 @@ dblp.addRankings = function(){
             source = source + "(" + abbr + ")";
         }
 
+        let uri = dblp.getUriFromUrl(url);
         if(source.length != 0 && !result.next().hasClass('ccf-ranking')){
             for(let getRankingSpan of dblp.rankingSpanProvider){
-                let names = dblp.parseNames(source);
+                let names = dblp.parseNames(source, uri);
                 result.after(getRankingSpan(names));
             }
         }
     });
 }
 
-dblp.addRanking = function(selector, abbr){
+dblp.addRanking = function(selector, abbr, uri){
     let result = $(selector);
     let source = result.text().trim();
     if(abbr != undefined && source.indexOf('(') == -1){
@@ -72,13 +92,13 @@ dblp.addRanking = function(selector, abbr){
     }
     if(source.length != 0){
         for(let getRankingSpan of dblp.rankingSpanProvider){
-            let names = dblp.parseNames(source);
+            let names = dblp.parseNames(source, uri);
             result.after(getRankingSpan(names));
         }
     }
 }
 
-dblp.parseNames = function(source){
+dblp.parseNames = function(source, uri){
     let names = [];
     let index = source.lastIndexOf('(');
     let full;
@@ -102,7 +122,17 @@ dblp.parseNames = function(source){
         let name = {};
         name.full = (full[i] || "").trim();
         name.abbr = (abbr[i] || "").trim();
+        name.uri = uri;
         names.push(name);
     }
     return names;
+}
+
+dblp.uri2rank = function(name){
+    let index = ccf.dblp_uri2index[name.uri]
+    if(index != undefined) {
+        name.full = ccf.rank[index][0];
+        return ccf.rank[index][1];
+    }
+    return undefined;
 }

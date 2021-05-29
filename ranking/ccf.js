@@ -5,17 +5,24 @@ ccf.getRankingInfo = function(names){
     rankingInfo.rankings = [];
     rankingInfo.info = '';
     for(let name of names){
-        let ranking = ccf.rankingFullName[name.full];
-        if(ranking == undefined){
-            let possible = ccf.rankingAbbrName[name.abbr];
+        let ranking;
+        if (ccf.custom2rank != undefined) {
+            ranking = ccf.custom2rank(name);
+        } else if(name.full != undefined) {
+            ranking = ccf.full2rank[name.full.toLowerCase()];
+        }
+        if(ranking == undefined && name.abbr != undefined){
+            let possible = ccf.abbr2index[name.abbr.toLowerCase()];
             if(possible == undefined){
                 ranking = 'none';
                 rankingInfo.info += "[" + name.abbr + "] " + name.full + ": not found\n"
             } else {
                 rankingInfo.info += name.abbr + ":" + "\n";
-                for(let fullname in possible){
-                    rankingInfo.info += fullname + ": CCF " + possible[fullname] + "\n";
-                    ranking = possible[fullname] + '?';
+                for(let index of possible){
+                    const fullname = ccf.rank[index][0];
+                    const rank = ccf.rank[index][1];
+                    rankingInfo.info += fullname + ": CCF " + rank + "\n";
+                    ranking = rank + '?';
                 }
             }
         } else {

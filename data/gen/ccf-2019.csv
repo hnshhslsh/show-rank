@@ -1,0 +1,613 @@
+abbr,full,dblp_uri,rank
+TOCS,ACM Transactions on Computer Systems,journals/tocs,A
+TOS,ACM Transactions on Storage,journals/tos,A
+TCAD,IEEE Transactions On Computer-Aided Design Of Integrated Circuits And System,journals/tcad,A
+TC,IEEE Transactions on Computers,journals/tc,A
+TPDS,IEEE Transactions on Parallel and Distributed Systems,journals/tpds,A
+TACO,ACM Transactions on Architecture and Code Optimization,journals/taco,B
+TAAS,ACM Transactions on Autonomous and Adaptive Systems,journals/taas,B
+TODAES,ACM Transactions on Design Automation of Electronic Systems,journals/todaes,B
+TECS,ACM Transactions on Embedded Computing Systems,journals/tecs,B
+TRETS,ACM Transactions on Reconfigurable Technology and Systems,journals/trets,B
+TVLSI,IEEE Transactions on Very Large Scale Integration (VLSI) Systems,journals/tvlsi,B
+JPDC,Journal of Parallel and Distributed Computing,journals/jpdc,B
+JSA,Journal of Systems Architecture: Embedded Software Design,journals/jsa,B
+PARCO,Parallel Computing,conf/parco,B
+,Performance Evaluation: An International Journal,journals/pe,B
+JETC,ACM Journal on Emerging Technologies in Computing Systems,journals/jetc,C
+,Concurrency and Computation: Practice and Experience,journals/concurrency,C
+DC,Distributed Computing,journals/dc,C
+FGCS,Future Generation Computer Systems,journals/fgcs,C
+TCC,IEEE Transactions on Cloud Computing,journals/tcc,C
+Integration,"Integration, the VLSI Journal",journals/integration,C
+JETTA,Journal of Electronic Testing-Theory and Applications,journals/et,C
+JGC,The Journal of Grid computing,journals/grid,C
+MICPRO,Microprocessors and Microsystems: Embedded Hardware Design,journals/mam,C
+RTS,Real-Time Systems,journals/rts,C
+TJSC,The Journal of Supercomputing,journals/tjs,C
+PPoPP,ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming,conf/ppopp,A
+FAST,Conference on File and Storage Technologies,conf/fast,A
+DAC,Design Automation Conference,conf/dac,A
+HPCA,High-Performance Computer Architecture,conf/cnhpca,A
+MICRO,IEEE/ACM International Symposium on Microarchitecture,journals/micro,A
+SC,"International Conference for High Performance Computing, Networking, Storage, and Analysis",conf/sc,A
+ASPLOS,International Conference on Architectural Support for Programming Languages and Operating Systems,conf/asplos,A
+ISCA,International Symposium on Computer Architecture,conf/isca,A
+USENIX ATC,USENIX Annul Technical Conference,conf/usenix,A
+SOCC,ACM Symposium on Cloud Computing,conf/cloud,B
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,conf/spaa,B
+PODC,ACM Symposium on Principles of Distributed Computing,conf/podc,B
+FPGA,ACM/SIGDA International Symposium on Field-Programmable Gate Arrays,conf/fpga,B
+CGO,Code Generation and Optimization,conf/cgo,B
+DATE,"Design, Automation & Test in Europe",conf/date,B
+EuroSys,European Conference on Computer Systems,conf/eurosys,B
+HOT CHIPS,Hot Chips: A Symposium on High Performance Chips,conf/hotchips,B
+CLUSTER,IEEE International Conference on Cluster Computing,conf/cluster,B
+ICCD,International Conference on Computer Design,conf/iccd,B
+ICCAD,International Conference on Computer-Aided Design,conf/iccad,B
+ICDCS,International Conference on Distributed Computing Systems,conf/icdcs,B
+CODES+ISSS,International Conference on Hardware/Software Co-design and System Synthesis,conf/codes,B
+HiPEAC,International Conference on High Performance and Embedded Architectures and Compilers,conf/hipeac,B
+SIGMETRICS,International Conference on Measurement and Modeling of Computer Systems,conf/sigmetrics,B
+PACT,International Conference on Parallel Architectures and Compilation Techniques,conf/IEEEpact,B
+ICPP,International Conference on Parallel Processing,conf/icpp,B
+ICS,International Conference on Supercomputing,conf/ics,B
+VEE,International Conference on Virtual Execution Environments,conf/vee,B
+IPDPS,International Parallel & Distributed Processing Symposium,conf/ipps,B
+Performance,"International Symposium on Computer Performance, Modeling, Measurements and Evaluation",conf/performance,B
+HPDC,International Symposium on High Performance Distributed Computing,conf/hpdc,B
+ITC,International Test Conference,conf/itc,B
+LISA,Large Installation system Administration Conference,conf/lisa,B
+MSST,Mass Storage Systems and Technologies,conf/mss,B
+RTAS,Real-Time and Embedded Technology and Applications Symposium,conf/rtas,B
+CF,ACM International Conference on Computing Frontiers,conf/cf,C
+SYSTOR,ACM International Systems and Storage Conference,conf/systor,C
+NOCS,ACM/IEEE International Symposium on Networks-on-Chip,conf/nocs,C
+ASAP,"Application-Specific Systems, Architectures, and Processors",conf/asap,C
+ASP-DAC,Asia and South Pacific Design Automation Conference,conf/aspdac,C
+Euro-Par,European Conference on Parallel and Distributed Computing,conf/europar,C
+ETS,European Test Symposium,conf/ets,C
+FPL,Field Programmable Logic and Applications,conf/fpl,C
+FCCM,Field-Programmable Custom Computing Machines,conf/fccm,C
+GLSVLSI,Great Lakes Symposium on VLSI,conf/glvlsi,C
+ATS,IEEE Asian Test Symposium,conf/ats,C
+HPCC,IEEE International Conference on High Performance Computing and Communications,conf/hpcc,C
+HiPC,"IEEE International Conference on High Performance Computing, Data and Analytics",conf/hipc,C
+MASCOTS,"IEEE International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems",conf/mascots,C
+ISPA,IEEE International Symposium on Parallel and Distributed Processing with Applications,conf/ispa,C
+CCGRID,"IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing",conf/ccgrid,C
+NPC,IFIP International Conference on Network and Parallel Computing,conf/npc,C
+ICA3PP,International Conference on Algorithms and Architectures for Parallel Processing,conf/ica3pp,C
+CASES,"International Conference on Compilers, Architectures, and Synthesis for Embedded Systems",conf/cases,C
+FPT,International Conference on Field-Programmable Technology,conf/fpt,C
+ICPADS,International Conference on Parallel and Distributed Systems,conf/icpads,C
+ISCAS,International Symposium on Circuits and Systems,conf/iscas,C
+ISLPED,International Symposium on Low Power Electronics and Design,conf/islped,C
+ISPD,International Symposium on Physical Design,conf/ispd,C
+HotI,Symposium on High-Performance Interconnects,conf/hoti,C
+VTS,VLSI Test Symposium,conf/vts,C
+JSAC,IEEE Journal of Selected Areas in Communications,journals/jsac,A
+TMC,IEEE Transactions on Mobile Computing,journals/tmc,A
+TON,IEEE/ACM Transactions on Networking,journals/ton,A
+TOIT,ACM Transactions on Internet Technology,journals/toit,B
+TOMCCAP,"ACM Transactions on Multimedia Computing, Communications and Applications",journals/tomccap,B
+TOSN,ACM Transactions on Sensor Networks,journals/tosn,B
+CN,Computer Networks,journals/cn,B
+TCOM,IEEE Transactions on Communications,journals/tcom,B
+TWC,IEEE Transactions on Wireless Communications,journals/twc,B
+,Ad hoc Networks,journals/adhoc,C
+CC,Computer Communications,journals/comcom,C
+TNSM,IEEE Transactions on Network and Service Management,journals/tnsm,C
+,IET Communications,journals/iet-com,C
+JNCA,Journal of Network and Computer Applications,journals/jnca,C
+MONET,Mobile Networks & Applications,journals/monet,C
+,Networks,journals/networks,C
+PPNA,Peer-to-Peer Networking and Applications,journals/ppna,C
+WCMC,Wireless Communications & Mobile Computing,journals/wicomm,C
+,Wireless Networks,journals/winet,C
+SIGCOMM,"ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",conf/sigcomm,A
+MobiCom,ACM International Conference on Mobile Computing and Networking,conf/mobicom,A
+INFOCOM,IEEE International Conference on Computer Communications,conf/infocom,A
+NSDI,Symposium on Network System Design and Implementation,conf/nsdi,A
+SenSys,ACM Conference on Embedded Networked Sensor Systems,conf/sensys,B
+CoNEXT,ACM International Conference on emerging Networking EXperiments and Technologies,conf/conext,B
+SECON,IEEE Communications Society Conference on Sensor and Ad Hoc Communications and Networks,conf/secon,B
+IPSN,International Conference on Information Processing in Sensor Networks,conf/ipsn,B
+MobiSys,"International Conference on Mobile Systems, Applications, and Services",conf/mobisys,B
+ICNP,International Conference on Network Protocols,conf/icnp,B
+MobiHoc,International Symposium on Mobile Ad Hoc Networking and Computing,conf/mobihoc,B
+NOSSDAV,International Workshop on Network and Operating System Support for Digital Audio and Video,conf/nossdav,B
+IWQoS,International Workshop on Quality of Service,conf/iwqos,B
+IMC,Internet Measurement Conference,conf/imc,B
+ANCS,Architectures for Networking and Communications Systems,conf/ancs,C
+APNOMS,Asia-Pacific Network Operations and Management Symposium,conf/apnoms,C
+FORTE,Formal Techniques for Networked and Distributed Systems,conf/forte,C
+LCN,IEEE Conference on Local Computer Networks,conf/lcn,C
+GLOBECOM,IEEE Global Communications Conference,conf/globecom,C
+ICC,IEEE International Conference on Communications,conf/icc,C
+ICCCN,IEEE International Conference on Computer Communications and Networks,conf/icccn,C
+MASS,IEEE International Conference on Mobile Ad-hoc and Sensor Systems,conf/mass,C
+P2P,IEEE International Conference on P2P Computing,conf/p2p,C
+IPCCC,IEEE International Performance Computing and Communications Conference,conf/ipccc,C
+WoWMoM,IEEE International Symposium on a World of Wireless Mobile and Multimedia Networks,conf/wowmom,C
+ISCC,IEEE Symposium on Computers and Communications,conf/iscc,C
+WCNC,IEEE Wireless Communications & Networking Conference,conf/wcnc,C
+Networking,IFIP International Conferences on Networking,conf/networking,C
+IM,IFIP/IEEE International Symposium on Integrated Network Management,conf/im,C
+MSN,International Conference on Mobile Ad-hoc and Sensor Networks,conf/msn,C
+MSWiM,"International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems",conf/mswim,C
+WASA,"International Conference on Wireless Algorithms, Systems, and Applications",conf/wasa,C
+HotNets,The Workshop on Hot Topics in Networks,conf/hotnets,C
+TDSC,IEEE Transactions on Dependable and Secure Computing,journals/tdsc,A
+TIFS,IEEE Transactions on Information Forensics and Security,journals/tifs,A
+,Journal of Cryptology,journals/joc,A
+TOPS,ACM Transactions on Privacy and Security,journals/tissec,B
+,Computers & Security,journals/compsec,B
+,"Designs, Codes and Cryptography",journals/dcc,B
+JCS,Journal of Computer Security,journals/jcs,B
+CLSR,Computer Law and Security Review,journals/clsr,C
+,EURASIP Journal on Information Security,journals/ejisec,C
+,IET Information Security,journals/iet-ifs,C
+IMCS,Information Management & Computer Security,journals/imcs,C
+IJICS,International Journal of Information and Computer Security,journals/ijics,C
+IJISP,International Journal of Information Security and Privacy,journals/ijisp,C
+JISA,Journal of Information Security and Application,journals/istr,C
+SCN,Security and Communication Networks,journals/scn,C
+CCS,ACM Conference on Computer and Communications Security,conf/ccs,A
+EUROCRYPT,European Cryptology Conference,conf/eurocrypt,A
+S&P,IEEE Symposium on Security and Privacy,conf/sp,A
+CRYPTO,International Cryptology Conference,conf/crypto,A
+USENIX Security,Usenix Security Symposium,conf/uss,A
+ACSAC,Annual Computer Security Applications Conference,conf/acsac,B
+ASIACRYPT,Annual International Conference on the Theory and Application of Cryptology and Information Security,conf/asiacrypt,B
+ESORICS,European Symposium on Research in Computer Security,conf/esorics,B
+FSE,Fast Software Encryption,conf/fse,B
+CSFW,IEEE Computer Security Foundations Workshop,conf/csfw,B
+SRDS,IEEE International Symposium on Reliable Distributed Systems,conf/srds,B
+CHES,International Conference on Cryptographic Hardware and Embedded Systems,conf/ches,B
+DSN,International Conference on Dependable Systems and Networks,conf/dsn,B
+RAID,International Symposium on Recent Advances in Intrusion Detection,conf/raid,B
+PKC,International Workshop on Practice and Theory in Public Key Cryptography,conf/pkc,B
+NDSS,ISOC Network and Distributed System Security Symposium,conf/ndss,B
+TCC,Theory of Cryptography Conference,conf/tcc,B
+WiSec,ACM Conference on Security and Privacy in Wireless and Mobile Networks,conf/wisec,C
+SACMAT,ACM Symposium on Access Control Models and Technologies,conf/sacmat,C
+DRM,ACM Workshop on Digital Rights Management,conf/drm,C
+IH&MMSec,ACM Workshop on Information Hiding and Multimedia Security,conf/ih,C
+ACNS,Applied Cryptography and Network Security,conf/acns,C
+AsiaCCS,Asia Conference on Computer and Communications Security,conf/ccs,C
+ACISP,AustralasiaConferenceonInformation SecurityandPrivacy,conf/acisp,C
+CT-RSA,"RSA Conference, Cryptographers' Track",conf/ctrsa,C
+DIMVA,Detection of Intrusions and Malware &Vulnerability Assessment,conf/dimva,C
+DFRWS,Digital Forensic Research Workshop,conf/dfrws,C
+FC,Financial Cryptography and Data Security,conf/fc,C
+TrustCom,"IEEE International Conference on Trust,Security and Privacy in Computing and Communications",conf/trustcom,C
+SEC,IFIP International Information Security Conference,conf/sec,C
+IFIP WG 11.9,IFIP WG 11.9 International Conference on Digital Forensics,conf/ifip11-9,C
+ISC,Information Security Conference,conf/isw,C
+ICDF2C,International Conference on Digital Forensics & Cyber Crime,conf/icdf2c,C
+ICICS,International Conference on Information and Communications Security,conf/icics,C
+SecureComm,International Conference on Security and Privacy in Communication Networks,conf/securecomm,C
+NSPW,New Security Paradigms Workshop,conf/nspw,C
+PAM,Passive and Active Measurement Conference,conf/pam,C
+PETS,Privacy Enhancing Technologies Symposium,conf/pet,C
+SAC,Selected Areas in Cryptography,conf/sacrypt,C
+SOUPS,Symposium On Usable Privacy and Security,conf/soups,C
+HotSec,USENIX Workshop on Hot Topics in Security,conf/uss/hotsec,C
+TOPLAS,ACM Transactions on Programming Languages & Systems,journals/toplas,A
+TOSEM,ACM Transactions on Software Engineering and Methodology,journals/tosem,A
+TSE,IEEE Transactions on Software Engineering,journals/tse,A
+ASE,Automated Software Engineering,journals/ase,B
+ESE,Empirical Software Engineering,journals/ese,B
+TSC,IEEE Transactions on Service Computing,journals/tsc,B
+IETS,IET Software,journals/iee,B
+IST,Information and Software Technology,journals/infsof,B
+JFP,Journal of Functional Programming,journals/jfp,B
+,Journal of Software: Evolution and Process,journals/smr,B
+JSS,Journal of Systems and Software,journals/jss,B
+RE,Requirements Engineering,journals/re,B
+SCP,Science of Computer Programming,journals/scp,B
+SoSyM,Software and System Modeling,journals/sosym,B
+STVR,"Software Testing, Verification and Reliability",journals/stvr,B
+SPE,Software: Practice and Experience,journals/spe,B
+CL,"Computer Languages, Systems and Structures",journals/cl,C
+IJSEKE,International Journal on Software Engineering and Knowledge Engineering,journals/ijseke,C
+STTT,International Journal on Software Tools for Technology Transfer,journals/sttt,C
+JLAP,Journal of Logic and Algebraic Programming,journals/jlap,C
+JWE,Journal of Web Engineering,journals/jwe,C
+SOCA,Service Oriented Computing and Applications,journals/soca,C
+SQJ,Software Quality Journal,journals/sqj,C
+TPLP,Theory and Practice of Logic Programming,journals/tplp,C
+PLDI,ACM SIGPLAN Symposium on Programming Language Design & Implementation,conf/pldi,A
+POPL,ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages,conf/popl,A
+FSE/ESEC,ACM SIGSOFT Symposium on the Foundation of Software Engineering/ European Software Engineering Conference,conf/sigsoft,A
+SOSP,ACM Symposium on Operating Systems Principles,conf/sosp,A
+OOPSLA,"Conference on Object-Oriented Programming Systems, Languages,and Applications",conf/oopsla,A
+ASE,International Conference on Automated Software Engineering,conf/kbse,A
+ICSE,International Conference on Software Engineering,conf/icse,A
+ISSTA,International Symposium on Software Testing and Analysis,conf/issta,A
+OSDI,USENIX Symposium on Operating Systems Design and Implementations,conf/osdi,A
+ECOOP,European Conference on Object-Oriented Programming,conf/ecoop,B
+ETAPS,European Joint Conferences on Theory and Practice of Software,conf/etaps,B
+ICPC,IEEE International Conference on Program Comprehension,conf/iwpc,B
+RE,IEEE International Requirement Engineering Conference,conf/re,B
+CAiSE,International Conference on Advanced Information Systems Engineering,conf/caise,B
+ICFP,International Conference on Function Programming,conf/icfp,B
+LCTES,"International Conference on Languages,Compilers, Tools and Theory for Embedded Systems",conf/lctrts,B
+MoDELS,International Conference on Model Driven Engineering Languages and Systems,conf/models,B
+CP,International Conference on Principles and Practice of Constraint Programming,conf/cp,B
+ICSOC,International Conference on Service Oriented Computing,conf/icsoc,B
+SANER,"International Conference on Software Analysis, Evolution, and Reengineering",conf/wcre,B
+ICSME,International Conference on Software Maintenance and Evolution,conf/icsm,B
+VMCAI,"International Conference on Verification,Model Checking, and Abstract Interpretation",conf/vmcai,B
+ICWS,International Conference on Web Services(Research Track),conf/icws,B
+Middleware,International Middleware Conference,conf/middleware,B
+SAS,International Static Analysis Symposium,conf/sas,B
+ESEM,International Symposium on Empirical Software Engineering and Measurement,conf/esem,B
+FM,International Symposium on Formal Methods,conf/fm,B
+ISSTA,International Symposium on Software Testing and Analysis,conf/issta,B
+HotOS,USENIX Workshop on Hot Topics in Operating Systems,conf/hotos,B
+PEPM,ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation,conf/pepm,C
+PASTE,ACMSIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering,conf/paste,C
+APLAS,Asian Symposium on Programming Languages and Systems,conf/aplas,C
+APSEC,Asia-Pacific Software Engineering Conference,conf/apsec,C
+EASE,Evaluation and Assessment in Software Engineering,conf/ease,C
+ICECCS,IEEE International Conference on Engineering of Complex Computer Systems,conf/iceccs,C
+ICST,"IEEE International Conference on Software Testing, Verification and Validation",conf/icst,C
+ISPASS,IEEE International Symposium on Performance Analysis of Systems and Software,conf/ispass,C
+SCAM,IEEE International Working Conference on Source Code Analysis and Manipulation,conf/scam,C
+COMPSAC,International Computer Software and Applications Conference,conf/compsac,C
+ICFEM,International Conference on Formal Engineering Methods,conf/icfem,C
+TOOLS,"International Conference on Objects, Models, Components, Patterns",conf/tools,C
+SCC,International Conference on Service Computing,conf/IEEEscc,C
+ICSSP,International Conference on Software and System Process,conf/ispw,C
+SEKE,International Conference on Software Engineering and Knowledge Engineering,conf/seke,C
+QRS,"International Conference on Software Quality, Reliability and Security",conf/qrs,C
+ICSR,International Conference on Software Reuse,conf/icsr,C
+ICWE,International Conference on Web Engineering,conf/icwe,C
+SPIN,International SPIN Workshop on Model Checking of Software,conf/spin,C
+ATVA,International Symposium on Automated Technology for Verification and Analysis,conf/atva,C
+LOPSTR,International Symposium on Logic-based Program Synthesis and Transformation,conf/lopstr,C
+TASE,International Symposium on Theoretical Aspects of Software Engineering,conf/tase,C
+MSR,Mining Software Repositories,conf/msr,C
+REFSQ,Requirements Engineering: Foundation for Software Quality,conf/refsq,C
+WICSA,Working IEEE/IFIP Conference on Software Architecture,conf/wicsa,C
+TODS,ACM Transactions on Database Systems,journals/tods,A 
+TOIS,ACM Transactions on Information Systems,journals/tois,A 
+TKDE,IEEE Transactions on Knowledge and Data Engineering,journals/tkde,A 
+VLDBJ,The VLDB Journal,journals/vldb,A 
+TKDD,ACM Transactions on Knowledge Discovery from Data,journals/tkdd,B
+TWEB,ACM Transactions on the Web,journals/tweb,B
+AEI,Advanced Engineering Informatics,journals/aei,B
+DKE,Data and Knowledge Engineering,journals/dke,B
+DMKD,Data Mining and Knowledge Discovery,journals/datamine,B
+EJIS,European Journal of Information Systems,journals/ejis,B
+,GeoInformatica,journals/geoinformatica,B
+IPM,Information Processing and Management,journals/ipm,B
+,Information Sciences,journals/isci,B
+IS,Information Systems,journals/is,B
+JASIST,Journal of the American Society for Information Science and Technology,journals/jasis,B
+JWS,Journal of Web Semantics,journals/ws,B
+KAIS,Knowledge and Information Systems,journals/kais,B
+DPD,Distributed and Parallel Databases,journals/dpd,C
+I&M,Information and Management,journals/iam,C
+IPL,Information Processing Letters,journals/ipl,C
+IR,Information Retrieval Journal,journals/ir,C
+IJCIS,International Journal of Cooperative Information Systems,journals/ijcis,C
+IJGIS,International Journal of Geographical Information Science,journals/gis,C
+IJIS,International Journal of Intelligent Systems,journals/ijis,C
+IJKM,International Journal of Knowledge Management,journals/ijkm,C
+IJSWIS,International Journal on Semantic Web and Information Systems,journals/ijswis,C
+JCIS,Journal of Computer Information Systems,journals/jcis,C
+JDM,Journal of Database Management,journals/jdm,C
+JGITM,Journal of Global Information Technology Management,,C
+JIIS,Journal of Intelligent Information Systems,journals/jiis,C
+JSIS,Journal of Strategic Information Systems,journals/jsis,C
+SIGMODACM,Conference on Management of Data,conf/sigmod,A
+SIGKDDACM,Knowledge Discovery and Data Mining,conf/kdd,A
+ICDEIEEE,International Conference on Data Engineering,conf/icde,A
+SIGIR,International Conference on Research on Development in Information Retrieval,conf/sigir,A
+VLDB,International Conference on Very Large Data Bases,conf/vldb,A
+CIKM,ACM International Conference on Information and Knowledge Management,conf/cikm,B
+WSDM,ACM International Conference on Web Search and Data Mining,conf/wsdm,B
+PODS,ACM Symposium on Principles of Database Systems,conf/pods,B
+DASFAA,Database Systems for Advanced Applications,conf/dasfaa,B
+ECML-PKDD,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases,conf/ecml,B
+ISWC,IEEEInternational Semantic Web Conference,conf/semweb,B
+ICDM,International Conference on Data Mining,conf/icdm,B
+ICDT,International Conference on Database Theory,conf/icdt,B
+EDBT,International Conference on Extending DB Technology,conf/edbt,B
+CIDR,International Conference on Innovative Data Systems Research,conf/cidr,B
+SDM,SIAM International Conference on Data Mining,conf/sdm,B
+APWeb,Asia Pacific Web Conference,conf/apweb,C
+DEXA,Database and Expert System Applications,conf/dexa,C
+ECIR,European Conference on IR Research,conf/ecir,C
+ESWC,Extended Semantic Web Conference,conf/esws,C
+WebDB,International ACM Workshop on Web and Databases,conf/webdb,C
+ER,International Conference on Conceptual Modeling,conf/er,C
+MDM,International Conference on Mobile Data Management,conf/mdm,C
+SSDBM,International Conference on Scientific and Statistical DB Management,conf/ssdbm,C
+WAIM,International Conference on Web Age Information Management,conf/waim,C
+SSTD,International Symposium on Spatial and Temporal Databases,conf/ssd,C
+PAKDD,Pacific-Asia Conference on Knowledge Discovery and Data Mining,conf/pakdd,C
+WISE,Web Information Systems Engineering,conf/wise,C
+TIT,IEEE Transactions on Information Theory,journals/tit,A
+IANDC,Information and Computation,journals/iandc,A
+SICOMP,SIAM Journal on Computing,journals/siamcomp,A
+TALG,ACM Transactions on Algorithms,journals/talg,B
+TOCL,ACM Transactions on Computational Logic,journals/tocl,B
+TOMS,ACM Transactions on Mathematical Software,journals/toms,B
+Algorithmica,Algorithmica,journals/algorithmica,B
+CC,Computational complexity,journals/cc,B
+FAC,Formal Aspects of Computing,journals/fac,B
+FMSD,Formal Methods in System Design,journals/fmsd,B
+INFORMS,INFORMS Journal on Computing,journals/informs,B
+JCSS,Journal of Computer and System Sciences,journals/jcss,B
+JGO,Journal of Global Optimization,journals/jgo,B
+JSC,Journal of Symbolic Computation,journals/jsc,B
+MSCS,Mathematical Structures in Computer Science,journals/mscs,B
+TCS,Theoretical Computer Science,journals/tcs,B
+ACTA,Acta Informatica,journals/acta,C
+APAL,Annals of Pure and Applied Logic,journals/apal,C
+DAM,Discrete Applied Mathematics,journals/dam,C
+FUIN,Fundamenta Informaticae,journals/fuin,C
+LISP,Higher-Order and Symbolic Computation,journals/lisp,C
+IPL,Information Processing Letters,journals/ipl,C
+JCOMPLEXITY,Journal of Complexity,journals/jc,C
+LOGCOM,Journal of Logic and Computation,journals/logcom,C
+JSL,Journal of Symbolic Logic,journals/jsyml,C
+LMCS,Logical Methods in Computer Science,journals/lmcs,C
+SIDMA,SIAM Journal on Discrete Mathematics,journals/siamdm,C
+,Theory of Computing Systems,journals/mst,C
+STOC,ACM Symposium on Theory of Computing,conf/stoc,A
+SODA,ACM-SIAM Symposium on Discrete Algorithms,conf/soda,A
+CAV,Computer Aided Verification,conf/cav,A
+FOCS,IEEE Annual Symposium on Foundations of Computer Science,conf/focs,A
+LICS,IEEE Symposium on Logic in Computer Science,conf/lics,A
+SoCG,ACM Symposium on Computational Geometry,conf/compgeom,B
+ESA,European Symposium on Algorithms,conf/esa,B
+CCC,IEEE Conference on Computational Complexity,conf/coco,B
+ICALP,"International Colloquium on Automata, Languages and Programming",conf/icalp,B
+CADE/IJCAR,International Conference on Automated Deduction/International Joint Conference on Automated Reasoning,conf/cade,B
+CONCUR,International Conference on Concurrency Theory,conf/concur,B
+HSCC,International Conference on Hybrid Systems: Computation and Control,conf/hybrid,B
+SAT,Theory and Applications of Satisfiability Testing,conf/sat,B
+CSL,Computer Science Logic,conf/csl,C
+FMCAD,Formal Method in Computer-Aided Design,conf/fmcad,C
+FSTTCS,Foundations of Software Technology and Theoretical Computer Science,conf/fsttcs,C
+DSAA,IEEE International Conference on Data Science and Advanced Analytics,conf/dsaa,C
+ICTAC,International Colloquium on Theoretical Aspects of Computing,conf/ictac,C
+IPCO,International Conference on Integer Programming and Combinatorial Optimization,conf/ipco,C
+RTA,International Conference on Rewriting Techniques and Applications,conf/rta,C
+ISAAC,International Symposium on Algorithms and Computation,conf/isaac,C
+MFCS,Mathematical Foundations of Computer Science,conf/mfcs,C
+STACS,Symposium on Theoretical Aspects of Computer Science,conf/stacs,C
+TOG,ACM Transactions on Graphics,journals/tog,A
+TIP,IEEE Transactions on Image Processing,journals/tip,A
+TVCG,IEEE Transactions on Visualization and Computer Graphics,journals/tvcg,A
+TOMCCAP,"ACM Transactions on Multimedia Computing,Communications and Application",journals/tomccap,B
+CAGD,Computer Aided Geometric Design,journals/cagd,B
+CGF,Computer Graphics Forum,journals/cgf,B
+CAD,Computer-Aided Design,journals/cad,B
+GM,Graphical Models,journals/cvgip,B
+TCSVT,IEEE Transactions on Circuits and Systems for Video Technology,journals/tcsv,B
+TMM,IEEE Transactions on Multimedia,journals/tmm,B
+JASA,Journal of The Acoustical Society of America,,B
+SIIMS,SIAM Journal on Imaging Sciences,journals/siamis,B
+Speech Com,Speech Communication,journals/speech,B
+CGTA,Computational Geometry: Theory and Applications,journals/comgeo,C
+CAVW,Computer Animation and Virtual Worlds,journals/jvca,C
+C&G,Computers & Graphics,journals/cg,C
+DCG,Discrete & Computational Geometry,journals/dcg,C
+SPL,IEEE Signal Processing Letters,journals/spl,C
+IET-IPR,IET Image Processing,journals/iet-ipr,C
+JVCIR,Journal of Visual Communication and Image Representation,journals/jvcir,C
+MS,Multimedia Systems,journals/mms,C
+MTA,Multimedia Tools and Applications,journals/mta,C
+,Signal Processing,journals/sigpro,C
+SPIC,Signal processing : image communication,journals/spic,C
+TVC,The Visual Computer,journals/vc,C
+ACM MM,ACM International Conference on Multimedia,conf/mm,A
+SIGGRAPH,ACM SIGGRAPH Annual Conference,conf/siggraph,A
+VR,IEEE Virtual Reality,conf/vr,A
+IEEE VIS,IEEE Visualization Conference,conf/visualization,A
+ICMR,ACM SIGMM International Conference on Multimedia Retrieval,conf/mir,B
+SI3D,ACM Symposium on Interactive 3D Graphics,conf/si3d,B
+SCA,ACM/Eurographics Symposium on Computer Animation,conf/sca,B
+DCC,Data Compression Conference,conf/dcc,B
+EG,Eurographics,conf/eurographics,B
+EuroVis,Eurographics Conference on Visualization,conf/vissym,B
+SGP,Eurographics Symposium on Geometry Processing,conf/sgp,B
+EGSR,Eurographics Symposium on Rendering,conf/rt,B
+ICASSP,"IEEE International Conference on Acoustics,Speech and SP",conf/icassp,B
+ICME,IEEE International Conference on Multimedia& Expo,conf/icmcs,B
+ISMAR,International Symposium on Mixed and Augmented Reality,conf/ismar,B
+PG,Pacific Graphics: The Pacific Conference on Computer Graphics and Applications,conf/pg,B
+SPM,Symposium on Solid and Physical Modeling,conf/sma,B
+,ACM Symposium on Virtual Reality Software and Technology,conf/vrst,C
+CASA,Computer Animation and Social Agents,conf/ca,C
+CGI,Computer Graphics International,conf/cgi,C
+INTERSPEECH,Conference of the International SpeechCommunication Association,conf/interspeech,C
+GMP,Geometric Modeling and Processing,conf/gmp,C
+PacificVis,IEEE Pacific Visualization Symposium,conf/apvis,C
+3DV,International Conference on 3D Vision,conf/3dim,C
+CAD/Graphics,International Conference on Computer-Aided Design and Computer Graphics,conf/cadgraphics,C
+ICIP,International Conference on Image Processing,conf/icip,C
+MMM,International Conference on Multimedia Modeling,conf/mmm,C
+PCM,Pacific-Rim Conference on Multimedia,conf/pcm,C
+SMI,Shape Modeling International,conf/smi,C
+AI,Artificial Intelligence,journals/ai,A
+TPAMI,IEEE Trans on Pattern Analysis and Machine Intelligence,journals/pami,A
+IJCV,International Journal of Computer Vision,journals/ijcv,A
+JMLR,Journal of Machine Learning Research,journals/jmlr,A
+TAP,ACM Transactions on Applied Perception,journals/tap,B
+TSLP,ACM Transactions on Speech and Language Processing,journals/tslp,B
+AAMAS,Autonomous Agents and Multi-Agent Systems,journals/aamas,B
+,Computational Linguistics,journals/coling,B
+CVIU,Computer Vision and Image Understanding,journals/cviu,B
+DKE,Data and Knowledge Engineering,journals/dke,B
+,Evolutionary Computation,journals/ec,B
+TAC,IEEE Transactions on Affective Computing,journals/taffco,B
+TASLP,"IEEE Transactions on Audio, Speech, and Language Processing",journals/taslp,B
+,IEEE Transactions on Cybernetics,journals/tcyb,B
+TEC,IEEE Transactions on Evolutionary Computation,journals/tec,B
+TFS,IEEE Transactions on Fuzzy Systems,journals/tfs,B
+TNNLS,IEEE Transactions on Neural Networks and learning systems,journals/tnn,B
+IJAR,International Journal of Approximate Reasoning,journals/ijar,B
+JAIR,Journal of Artificial Intelligence Research,journals/jair,B
+,Journal of Automated Reasoning,journals/jar,B
+JSLHR,"Journal of Speech, Language, and Hearing Research",,B
+,Machine Learning,journals/ml,B
+,Neural Computation,journals/neco,B
+,Neural Networks,journals/nn,B
+,Pattern Recognition,conf/par,B
+TALLIP,ACM Transactions on Asian and Low-Resource Language Information Processing,journals/talip,C
+,Applied Intelligence,journals/apin,C
+AIM,Artificial Intelligence in Medicine,journals/artmed,C
+,Artificial Life,journals/alife,C
+,Computational Intelligence,journals/ci,C
+,Computer Speech and Language,journals/csl,C
+,Connection Science,journals/connection,C
+DSS,Decision Support Systems,journals/dss,C
+EAAI,Engineering Applications of Artificial Intelligence,journals/eaai,C
+,Expert Systems,journals/es,C
+ESWA,Expert Systems with Applications,journals/eswa,C
+,Fuzzy Sets and Systems,journals/fss,C
+TG,IEEE Transactions on Games,journals/tciaig,C
+IET-CVI,IET Computer Vision,journals/iet-cvi,C
+,IET Signal Processing,journals/iet-spr,C
+IVC,Image and Vision Computing,journals/ivc,C
+IDA,Intelligent Data Analysis,journals/ida,C
+IJCIA,International Journal of Computational Intelligence and Applications,journals/ijcia,C
+IJIS,International Journal of Intelligent Systems,journals/ijis,C
+IJNS,International Journal of Neural Systems,journals/ijns,C
+IJPRAI,International Journal of Pattern Recognition and Artificial Intelligence,journals/ijprai,C
+IJUFKS,"International Journal of Uncertainty, Fuzziness and Knowledge-Based System",journals/ijufks,C
+IJDAR,International Journal on Document Analysis and Recognition,journals/ijdar,C
+JETAI,Journal of Experimental and Theoretical Artificial Intelligence,journals/jetai,C
+KBS,Knowledge-Based Systems,journals/kbs,C
+,Machine Translation,journals/mt,C
+,Machine Vision and Applications,journals/mva,C
+,Natural Computing,journals/nc,C
+NLE,Natural Language Engineering,journals/nle,C
+NCA,Neural Computing & Applications,journals/nca,C
+NPL,Neural Processing Letters,journals/npl,C
+,Neurocomputing,journals/ijon,C
+PAA,Pattern Analysis and Applications,journals/paa,C
+PRL,Pattern Recognition Letters,journals/prl,C
+,Soft Computing,journals/soco,C
+WI,Web Intelligence,journals/wias,C
+AAAI,AAAI Conference on Artificial Intelligence,conf/aaai,A
+NeurIPS,Annual Conference on Neural Information Processing Systems,conf/nips,A
+ACL,Annual Meeting of the Association for Computational Linguistics,conf/acl,A
+CVPR,IEEE Conference on Computer Vision and Pattern Recognition,conf/cvpr,A
+ICCV,International Conference on Computer Vision,conf/iccv,A
+ICML,International Conference on Machine Learning,conf/icml,A
+IJCAI,International Joint Conference on Artificial Intelligence,conf/ijcai,A
+COLT,Annual Conference on Computational Learning Theory,conf/colt,B
+EMNLP,Conference on Empirical Methods in Natural Language Processing,conf/emnlp,B
+ECAI,European Conference on Artificial Intelligence,conf/ecai,B
+ECCV,European Conference on Computer Vision,conf/eccv,B
+ICRA,IEEE International Conference on Robotics and Automation,conf/icra,B
+ICAPS,International Conference on Automated Planning and Scheduling,conf/aips,B
+ICCBR,International Conference on Case-Based Reasoning and Development,conf/iccbr,B
+COLING,International Conference on Computational Linguistics,conf/coling,B
+KR,International Conference on Principles of Knowledge Representation and Reasoning,conf/kr,B
+UAI,International Conference on Uncertainty in Artificial Intelligence,conf/uai,B
+AAMAS,International Joint Conference on Autonomous Agents and Multi-agent Systems,conf/atal,B
+PPSN,Parallel Problem Solving from Nature,conf/ppsn,B
+AISTATS,Artificial Intelligence and Statistics,conf/aistats,C
+ACCV,Asian Conference on Computer Vision,conf/accv,C
+ACML,Asian Conference on Machine Learning,conf/acml,C
+BMVC,British Machine Vision Conference,conf/bmvc,C
+NLPCC,CCF International Conference on Natural Language Processing and Chinese Computing,conf/nlpcc,C
+CoNLL,Conference on Computational Natural Language Learning,conf/conll,C
+GECCO,Genetic and Evolutionary Computation Conference,conf/gecco,C
+ICTAI,IEEE International Conference on Tools with Artificial Intelligence,conf/ictai,C
+IROS,IEEE\RSJ International Conference on Intelligent Robots and Systems,conf/iros,C
+ALT,International Conference on Algorithmic Learning Theory,conf/alt,C
+ICANN,International Conference on Artificial Neural Networks,conf/icann,C
+FG,International Conference on Automatic Face and Gesture Recognition,conf/fgr,C
+ICDAR,International Conference on Document Analysis and Recognition,conf/icdar,C
+ILP,International Conference on Inductive Logic Programming,conf/ilp,C
+KSEM,"International conference on Knowledge Science,Engineering and Management",conf/ksem,C
+ICONIP,International Conference on Neural Information Processing,conf/iconip,C
+ICPR,International Conference on Pattern Recognition,conf/icpr,C
+ICB,International Joint Conference on Biometrics,conf/icb,C
+IJCNN,International Joint Conference on Neural Networks,conf/ijcnn,C
+PRICAI,Pacific Rim International Conference on Artificial Intelligence,conf/pricai,C
+NAACL,The Annual Conference of the North American Chapter of the Association for Computational Linguistics,conf/naacl,C
+TOCHI,ACM Transactions on Computer-Human Interaction,journals/tochi,A
+IJHCS,International Journal of Human Computer Studies,journals/ijmms,A
+CSCW,Computer Supported Cooperative Work,journals/cscw,B
+HCI,Human Computer Interaction,journals/hhci,B
+,IEEE Transactions on Human-Machine Systems,journals/thms,B
+IWC,Interacting with Computers,journals/iwc,B
+IJHCI,International Journal of Human-Computer Interaction,journals/ijhci,B
+UMUAI,User Modeling and User-Adapted Interaction,journals/umuai,B
+BIT,Behaviour & Information Technology,journals/behaviourIT,C
+PUC,Personal and Ubiquitous Computing,journals/puc,C
+PMC,Pervasive and Mobile Computing,journals/percom,C
+CSCW,ACM Conference on Computer Supported Cooperative Work and Social Computing,conf/cscw,A
+CHI,ACM Conference on Human Factors in Computing Systems,conf/chi,A
+UbiComp,ACM International Conference on Ubiquitous Computing,conf/huc,A
+GROUP,ACM Conference on Supporting Group Work,conf/group,B
+IUI,ACM International Conference on Intelligent User Interfaces,conf/iui,B
+ITS,ACM International Conference on Interactive Tabletops and Surfaces,conf/tabletop,B
+UIST,ACM Symposium on User Interface Software and Technology,conf/uist,B
+ECSCW,European Conference on Computer Supported Cooperative Work,conf/ecscw,B
+PERCOM,IEEE International Conference on Pervasive Computing and Communications,conf/percom,B
+MobileHCI,International Conference on Human Computer Interaction with Mobile Devices and Services,conf/mhci,B
+DIS,ACM Conference on Designing Interactive Systems,conf/ACMdis,C
+ICMI,ACM International Conference on Multimodal Interaction,conf/icmi,C
+ASSETS,ACM SIGACCESS Conference on Computers and Accessibility,conf/assets,C
+GI,Graphics Interface conference,conf/graphicsinterface,C
+UIC,IEEE International Conference on Ubiquitous Intelligence and Computing,conf/uic,C
+,IEEE World Haptics Conference,conf/haptics,C
+INTERACT,IFIP TC13 Conference on Human-Computer Interaction,conf/interact,C
+IDC,Interaction Design and Children,conf/acmidc,C
+CollaborateCom,"International Conference on Collaborative Computing: Networking, Applications and Worksharing",conf/colcom,C
+CSCWD,International Conference on Computer Supported Cooperative Work in Design,conf/cscwd,C
+CoopIS,International Conference on Cooperative Information Systems,conf/coopis,C
+MobiQuitous,"International Conference on Mobile and Ubiquitous Systems: Computing,Networking and Services",conf/mobiquitous,C
+AVI,International Working Conference on Advanced Visual Interfaces,conf/avi,C
+JACM,Journal of the ACM,journals/jacm,A 
+Proc. IEEE,Proceedings of the IEEE,journals/pieee,A 
+,Bioinformatics,journals/bioinformatics,B
+,Briefings in Bioinformatics,journals/bib,B
+Cognition,Cognition: International Journal of Cognitive Science,,B
+TASAE,IEEE Transactions on Automation Science and Engineering,journals/tase,B
+TGARS,IEEE Transactions on Geoscience and Remote Sensing,journals/tgrs,B
+TITS,IEEE Transactions on Intelligent Transportation Systems,journals/tits,B
+TMI,IEEE Transactions on Medical Imaging,journals/tmi,B
+TR,IEEE Transactions on Robotics,journals/trob,B
+TCBB,IEEE-ACM Transactions on Computational Biology and Bioinformatics,journals/tcbb,B
+JCST,Journal of Computer Science and Technology,journals/jcst,B
+JAMIA,Journal of the American Medical Informatics Association,journals/jamia,B
+,PLOS Computational Biology,journals/ploscb,B
+,Science China Information Sciences,journals/chinaf,B
+,The Computer Journal,journals/cj,B
+,World Wide Web Journal,journals/wwwj,B
+,BMC Bioinformatics,journals/bmcbi,C
+,Cybernetics and Systems,journals/cas,C
+FCS,Frontiers of Computer Science,journals/fcsc,C
+,IEEE Geoscience and Remote Sensing Letters,journals/lgrs,C
+,JBHI,journals/titb,C
+,TBD,journals/tbd,C
+,IET Intelligent Transport Systems,,C
+,JBI,journals/jbi,C
+,Medical Image Analysis,journals/mia,C
+WWW,International World Wide Web Conferences,conf/www,A
+RTSS,Real-Time Systems Symposium,conf/rtss,A
+CogSci,Cognitive Science Society Annual Conference,conf/cogsci,B
+BIBM,IEEE International Conference on Bioinformatics and Biomedicine,conf/bibm,B
+EMSOFT,International Conference on Embedded Software,conf/emsoft,B
+ISMB,International conference on Intelligent Systems for Molecular Biology,conf/ismb,B
+RECOMB,International Conference on Research in Computational Molecular Biology,conf/recomb,B
+AMIA,American Medical Informatics Association Annual Symposium,conf/amia,C
+APBC,Asia Pacific Bioinformatics Conference,conf/apbc,C
+,IEEE International Conference on Big Data,conf/bigdataconf,C
+,IEEE International Conference on Cloud Computing,conf/IEEEcloud,C
+SMC,"IEEE International Conference on Systems, Man, and Cybernetics",conf/smc,C
+COSIT,International Conference on Spatial Information Theory,conf/cosit,C
+ISBRA,International Symposium on Bioinformatics Research and Applications,conf/isbra,C
