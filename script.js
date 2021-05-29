@@ -4,7 +4,7 @@ if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp
 } else if(location.href.startsWith("https://dl.acm.org/action/doSearch?")){
     acm.rankingSpanProvider.push(ccf.getRankingSpan);
     acm.start();
-} else if(location.href.startsWith("https://dblp.uni-trier.de") || location.href.startsWith("https://dblp.org")){
+} else if(location.hostname.startsWith("dblp")){
     ccf.custom2rank = dblp.uri2rank
     dblp.rankingSpanProvider.push(ccf.getRankingSpan);
     dblp.start();

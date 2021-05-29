@@ -21,8 +21,10 @@
             "matches": [
                 "https://ieeexplore.ieee.org/*",
                 "https://dl.acm.org/*",
-                "https://dblp.uni-trier.de/*",
                 "https://dblp.org/*",
+                "https://dblp.uni-trier.de/*",
+                "https://dblp2.uni-trier.de/*",
+                "https://dblp.dagstuhl.de/*",
                 "https://link.springer.com/search*",
                 "https://www.engineeringvillage.com/search*"
             ],

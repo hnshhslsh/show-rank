@@ -3,12 +3,12 @@ const dblp = {};
 dblp.rankingSpanProvider = [];
 
 dblp.start = function(){
-    let url = window.location.href;
+    let pathname = window.location.pathname;
     let title = $('head > title').text();
-    if(url.startsWith("https://dblp.uni-trier.de/search?")|| url.startsWith("https://dblp.org/search?") || title.indexOf("Search for")!=-1){
+    if(pathname.startsWith("/search?") || title.indexOf("Search for")!=-1){
         let interval = setInterval(function(){
             let message = $('#completesearch-publs > div > p.waiting');
-    
+
             if(message.css('display') == "none"){
                 $(window).bind('popstate', function(){
                     dblp.addRankings();
@@ -16,80 +16,58 @@ dblp.start = function(){
                 dblp.addRankings();
             }
         }, 1000);
-    } else if(url.startsWith("https://dblp.uni-trier.de/pid/") || url.startsWith("https://dblp.org/pid/")) {
+    } else if(pathname.startsWith("/pid/")) {
         dblp.addRankings();
-    } else if(url.startsWith("https://dblp.uni-trier.de/db/conf/") || url.startsWith("https://dblp.uni-trier.de/db/journals/") || url.startsWith("https://dblp.org/db/conf/") || url.startsWith("https://dblp.org/db/journals/")) {
-        let abbr = dblp.getAbbrFromUrl(url)
-        let uri = dblp.getUriFromUrl(url);
-        if(url.endsWith(".html") && !url.endsWith("index.html")){
-            dblp.addRanking("#breadcrumbs > ul > li > span:nth-child(3) > a > span", abbr, uri);
+    } else if(pathname.startsWith("/db/conf/") || pathname.startsWith("/db/journals/")) {
+        let uri = dblp.getUriFromPathname(pathname);
+        if(pathname.endsWith(".html") && !pathname.endsWith("index.html")){
+            dblp.addRanking("#breadcrumbs > ul > li > span:nth-child(3) > a > span", uri);
         } else {
-            dblp.addRanking("h1", abbr, uri);
+            dblp.addRanking("h1", uri);
         }
     } 
-}
+}   
 
-dblp.getAbbrFromUrl = function (url) {
-    let start;
-    if (url.startsWith("https://dblp.uni-trier.de/db/")) {
-        start = url.indexOf("/", 29) + 1; // "https://dblp.uni-trier.de/db/".length == 29
-    } else if (url.startsWith("https://dblp.org/db/")) {
-        start = url.indexOf("/", 20) + 1; // "https://dblp.org/db/".length == 20
-    } else {
-        return undefined;
-    }
-    return url.substring(start, url.indexOf("/", start)).toUpperCase();
-}
-
-dblp.getUriFromUrl = function (url) {
-    if(url.indexOf("/conf/uss/hotsec") != -1) {
+dblp.getUriFromPathname = function (pathname) {
+    if(pathname.indexOf("/conf/uss/hotsec") != -1) {
         return "conf/uss/hotsec"; //唯一的三级uri
+    } else if (pathname.startsWith("/db/")) {
+        const uriStart = "/db/".length;
+        const searchStart = pathname.indexOf("/", uriStart) + 1; 
+        return pathname.substring(uriStart, pathname.indexOf("/", searchStart)).toLowerCase();
     }
-    let uriStart;
-    let searchStart;
-    if (url.startsWith("https://dblp.uni-trier.de/db/")) {
-        uriStart = 29; // "https://dblp.uni-trier.de/db/".length == 29
-        searchStart = url.indexOf("/", uriStart) + 1; 
-    } else if (url.startsWith("https://dblp.org/db/")) {
-        uriStart = 20; // "https://dblp.org/db/".length == 20
-        searchStart = url.indexOf("/", uriStart) + 1
-    } else {
-        return undefined;
-    }
-    return url.substring(uriStart, url.indexOf("/", searchStart)).toLowerCase();
+    return undefined;
+    
 }
 
 dblp.addRankings = function(){
     let results = $("cite > a > span:nth-child(1) > span:nth-child(1)");//获取期刊或会议名称
+    if (dblp.resultsCount == results.length) {
+        return;
+    }
+    const lastResultCount = dblp.resultsCount == undefined ? 0 : dblp.resultsCount;
     dblp.resultsCount = results.length;
     
     results.each(function(index){
-        let result = $(this);
-        let source = result.text().trim().replace(/\(\d+\)/, "");
-
-        // get abbr name from href, thanks @HJhao (https://github.com/HJhao/show-rank/commit/1e36249d10e72ea33007535a4b976f3be70a13d0)
-        let url = result.parent().parent().attr("href");
-        let abbr = dblp.getAbbrFromUrl(url);
-        if (abbr != undefined && source.indexOf('(') == -1) {
-            source = source + "(" + abbr + ")";
-        }
-
-        let uri = dblp.getUriFromUrl(url);
-        if(source.length != 0 && !result.next().hasClass('ccf-ranking')){
-            for(let getRankingSpan of dblp.rankingSpanProvider){
-                let names = dblp.parseNames(source, uri);
-                result.after(getRankingSpan(names));
+        if (index >= lastResultCount) {
+            let result = $(this);
+            let source = result.text().trim().replace(/\(\d+\)/, "");
+            let url = result.parent().parent().attr("href");
+            let pathname = url.substring(url.indexOf(location.hostname) + location.hostname.length)
+            let uri = dblp.getUriFromPathname(pathname);
+            if(source.length != 0 && !result.next().hasClass('ccf-ranking')){
+                for(let getRankingSpan of dblp.rankingSpanProvider){
+                    let names = dblp.parseNames(source, uri);
+                    result.after(getRankingSpan(names));
+                }
             }
         }
     });
 }
 
-dblp.addRanking = function(selector, abbr, uri){
+dblp.addRanking = function(selector, uri){
     let result = $(selector);
     let source = result.text().trim();
-    if(abbr != undefined && source.indexOf('(') == -1){
-        source = source + "(" + abbr + ")";
-    }
     if(source.length != 0){
         for(let getRankingSpan of dblp.rankingSpanProvider){
             let names = dblp.parseNames(source, uri);
