@@ -62,7 +62,7 @@ scholar.appendRanks = function () {
   let elements = $("tr.gsc_a_tr");
   elements.each(function () {
     let node = $(this).find("td.gsc_a_t > a");
-    if (!node.next().hasClass("ccf-rank")) {
+    if (!node.next().hasClass("ccf-ranking")) {
       let title = node.text().replace(/[^A-z]/g, " ");
       let author = $(this)
         .find("div.gs_gray")
@@ -83,7 +83,7 @@ function fetchRank(node, title, author, year) {
     if (xhr.readyState == 4) {
       var dblp_url = "";
       var resp = JSON.parse(xhr.responseText).result.hits;
-      if (resp["@total"] == 0) {
+      if (resp == undefined || resp["@total"] == 0) {
         dblp_url == "";
       } else if (resp["@total"] == 1) {
         url = resp.hit[0].info.url;
@@ -92,8 +92,11 @@ function fetchRank(node, title, author, year) {
           url.lastIndexOf("/")
         );
       } else {
-        for (var h = 0; h < resp["@total"]; h++) {
-          info = resp.hit[h].info
+        for (let hit of resp.hit) {
+          info = hit.info
+          if (info.authors.author[0] == undefined) {
+            continue;
+          }
           author_1st = info.authors.author[0].text;
           year_fuzzy = info.year;
           year_last_check = 0;
