@@ -14,4 +14,8 @@ if(location.href.startsWith("https://ieeexplore.ieee.org/search/searchresult.jsp
 } else if(location.href.startsWith("https://www.engineeringvillage.com/search")){
     ei.rankingSpanProvider.push(ccf.getRankingSpan);
     ei.start();
+} else if (location.hostname.startsWith("scholar.google")) {
+    ccf.custom2rank = dblp.uri2rank
+    scholar.rankSpanList.push(ccf.getRankingSpan)
+    scholar.run();
 }

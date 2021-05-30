@@ -25,10 +25,15 @@ ccf.getRankingInfo = function(names){
                     ranking = rank + '?';
                 }
             }
+        } else if (ranking == undefined){
+            ranking = 'none';
         } else {
             rankingInfo.info += name.full + ": CCF " + ranking + "\n"
         }
         rankingInfo.rankings.push(ranking);
+    }
+    if(rankingInfo.info.length == 0) {
+        rankingInfo.info = "not found"
     }
     return rankingInfo;
 }
@@ -36,7 +41,7 @@ ccf.getRankingInfo = function(names){
 ccf.getRankingClass = function (rankings){
     for(let ranking of 'ABC'){
         for(let result of rankings){
-            if(result[0] == ranking){
+            if(result != undefined && result[0] == ranking){
                 return 'ccf-' + ranking.toLowerCase();
             }
         }
